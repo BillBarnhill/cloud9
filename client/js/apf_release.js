@@ -10442,7 +10442,7 @@ if(this.validate){this.validate(true);}return true;};this.$draw=function(){this.
 this.$input=this.$getLayoutNode("main","input",this.$ext);this.$notfromext=this.$input&&this.$input!=this.$ext;
 this.$setupEvents();};this.$childProperty="label";this.addEventListener("$skinchange",function(){if(this.label){this.$propHandlers.label.call(this,this.label);
 }});}).call(apf.checkbox.prototype=new apf.BaseButton());apf.aml.setElement("checkbox",apf.checkbox);
-if(!apf.hasRequireJS){apf.aml.setElement("codeeditor",apf.textbox);}else{define("apf/elements/codeeditor",["module","ace/editor","ace/edit_session","ace/virtual_renderer","ace/undomanager","ace/range","ace/lib/fixoldbrowsers"],function(module,Editor,EditSession,VirtualRenderer,UndoManager,Range){Editor=Editor.Editor;
+if(!apf.hasRequireJS){apf.aml.setElement("codeeditor",apf.textbox);}else{define("apf/elements/codeeditor",["module","ace/editor","ace/edit_session","ace/virtual_renderer","ace/undomanager","ace/range","ace/fixoldbrowsers"],function(module,Editor,EditSession,VirtualRenderer,UndoManager,Range){Editor=Editor.Editor;
 EditSession=EditSession.EditSession;VirtualRenderer=VirtualRenderer.VirtualRenderer;
 UndoManager=UndoManager.UndoManager;Range=Range.Range;apf.codeeditor=module.exports=function(struct,tagName){this.$init(tagName||"codeeditor",apf.NODE_VISIBLE,struct);
 this.documents=[];this.$cache={};this.setProperty("line",1);this.setProperty("col",1);
